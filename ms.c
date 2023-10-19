@@ -92,8 +92,8 @@ bool syntax_check(unsigned totmines, unsigned width, unsigned height, char inp[M
         return false;
 
     // Ensure only characters are from the set:   012345678?X
-    int i;
-    int mine_count=0;
+    unsigned int i;
+    unsigned int mine_count=0;
     for(i=0; i< width*height; i++){
         char c = inp[i];
         if(!(c == '0'  || c =='1' || c == '2' || c == '3' || c == '4' || c == '5' || c == '6' \
